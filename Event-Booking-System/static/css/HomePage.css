@@ -1,0 +1,105 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4; /* Soft Light Gray Background */
+}
+
+header {
+    background-color: #4B0082; /* Deep Purple */
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+#hero {
+    background-color: #e7f3fe; /* Light blue background for hero section */
+    padding: 50px 20px;
+    text-align: center;
+}
+
+#hero #bookNow {
+    background-color: #FF6F61; /* Bright Coral */
+    color: white;
+    padding: 15px 30px;
+    font-size: 18px;
+    font-weight: bold;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+#hero #bookNow:hover {
+    background-color: #FF4D4D; /* Darker Coral on hover */
+    transform: translateY(-3px); /* Lift effect on hover */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+}
+
+#hero #bookNow:active {
+    background-color: #FF6F61;
+    transform: translateY(1px);
+}
+
+.event-list {
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+}
+
+.event-card {
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 20px;
+    width: 30%;
+    text-align: center;
+}
+
+.btn-book {
+    background-color: #FF6F61; /* Bright Coral */
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-weight: bold;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.btn-book:hover {
+    background-color: #FF4D4D; /* Darker Coral */
+}
+
+footer {
+    background-color: #2C2C2C; /* Charcoal Black */
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+#about, #contact {
+    text-align: center;
+    padding: 20px;
+    color: #333; /* Darker text for better readability */
+}

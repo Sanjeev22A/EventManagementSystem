@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event Booking - Service Details</title>
+    <link rel="stylesheet" href="../static/css/EventBookingPage.css">
+</head>
+<body>
+    <header>
+        <h1>Event Booking - Choose Your Service</h1>
+        <nav>
+            <ul>
+                <li><a href="/">Home</a></li>
+                <li><a href="/services">Services</a></li>
+                <li><a href="/contact">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="event-details">
+            <h2>{{eventType}}</h2>
+            <p>Explore our exclusive services and find the perfect fit for your event!</p>
+        </section>
+
+        <section id="service-selection">
+            <h3>Select Service Type</h3>
+            <select id="service-type">
+                <option value="">--Select a Service--</option>
+                <option value="basic">Basic Service</option>
+                <option value="premium">Premium Service</option>
+                <option value="deluxe">Deluxe Service</option>
+            </select>
+
+            <h3>Select Number of Attendees</h3>
+            <select id="num-attendees">
+                <option value="">--Select Attendees--</option>
+                <option value="50">50</option>
+                <option value="100">100</option>
+                <option value="200">200</option>
+                <option value="500">500</option>
+            </select>
+
+            <div id="service-description" style="display: none;"></div>
+
+            <div id="price-display">
+                <h3>Calculated Price:</h3>
+                <p id="calculated-price">$0.00</p>
+            </div>
+        </section>
+
+        <section id="service-list">
+            <div class="service-card">
+                <h3>{{serviceName}}</h3>
+                <p><strong>Price Range:</strong> ${{priceMin}} - ${{priceMax}}</p>
+                <p><strong>Max Capacity:</strong> {{maxCapacity}} people</p>
+                <p><strong>Service Details:</strong></p>
+                <ul>
+                    {{#each serviceDetails}}
+                        <li>{{this}}</li>
+                    {{/each}}
+                </ul>
+                <button class="btn-book-now">Book Now</button>
+            </div>
+            <!-- Additional service cards can be added here -->
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Event Booking System. All rights reserved.</p>
+    </footer>
+
+    <script src="../static/js/EventBooking.js" defer></script>
+</body>
+</html>

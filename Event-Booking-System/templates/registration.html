@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../static/css/registration.css">
+    <title>Login and Registration</title>
+</head>
+<body>
+    <header>
+        <h1>Event Booking System</h1>
+    </header>
+    
+    <main>
+        <div id="form-container">
+            <div id="login-form" class="form active">
+                <h2>Login</h2>
+                <div class="form-group">
+                    <label for="login-email">Email:</label>
+                    <input type="email" id="login-email" required>
+                </div>
+                <div class="form-group">
+                    <label for="login-password">Password:</label>
+                    <input type="password" id="login-password" required>
+                </div>
+
+                <!--Marking for reconfig-->
+                <button id="login-button">Login</button>
+                <p>Don't have an account? <a href="#" id="switch-to-register">Register here</a></p>
+            </div>
+
+            <div id="registration-form" class="form">
+                <h2>Register</h2>
+                <div class="form-group">
+                    <label for="register-name">Name:</label>
+                    <input type="text" id="register-name" required>
+                </div>
+                <div class="form-group">
+                    <label for="register-email">Email:</label>
+                    <input type="email" id="register-email" required>
+                </div>
+                <div class="form-group">
+                    <label for="register-password">Password:</label>
+                    <input type="password" id="register-password" required>
+                </div>
+                <!--Marking for reconfig-->
+                <button id="register-button">Register</button>
+                <p>Already have an account? <a href="#" id="switch-to-login">Login here</a></p>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Event Booking System</p>
+    </footer>
+
+    <script src="../static/Javascript/registration.js"></script>
+</body>
+</html>

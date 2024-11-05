@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Booking Confirmation</title>
+    <link rel="stylesheet" href="../static/css/ConfirmationPage.css">
+</head>
+<body>
+    <header>
+        <h1>Booking Confirmation</h1>
+    </header>
+
+    <main>
+        <section id="confirmation-message">
+            <h2>Thank You for Your Booking!</h2>
+            <p>Your booking has been successfully confirmed.</p>
+            <p>We look forward to seeing you at the event!</p>
+        </section>
+
+        <section id="booking-details">
+            <h3>Your Booking Details</h3>
+            <p><strong>Event Type:</strong> <span id="event-type">{{eventType}}</span></p>
+            <p><strong>Service Selected:</strong> <span id="service-name">{{serviceName}}</span></p>
+            <p><strong>Number of Attendees:</strong> <span id="num-attendees">{{numAttendees}}</span></p>
+            <p><strong>Total Price:</strong> <span id="total-price">{{totalPrice}}</span></p>
+        </section>
+
+        <button id="redirect-button">Go to Home Page</button>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Event Booking System. All rights reserved.</p>
+    </footer>
+
+    <script src="../static/js/ConfirmationPage.js" defer></script>
+</body>
+</html>
